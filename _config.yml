@@ -4,65 +4,6 @@ url: "kojunseo.github.io" # the base hostname & protocol for your site, e.g. htt
 repository: just-the-docs/just-the-docs # for github-metadata
 theme: just-the-docs
 
-
-exclude:
- # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
-   - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
- # specific to the theme website:
-   - bin/
-   - lib/
-   - "*.gemspec"
-   - "*.gem"
-   - LICENSE.txt
-   - package.json
-   - package-lock.json
-   - Rakefile
-   - README.md
-   - CODE_OF_CONDUCT.md
-   - docker-compose.yml
-   - Dockerfile
- # theme test code
-   - fixtures/
-
-
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
-search:
-  # Split pages into sections that can be searched individually
-  # Supports 1 - 6, default: 2
-  heading_level: 2
-  # Maximum amount of previews per search result
-  # Default: 3
-  previews: 2
-  # Maximum amount of words to display before a matched word in the preview
-  # Default: 5
-  preview_words_before: 3
-  # Maximum amount of words to display after a matched word in the preview
-  # Default: 10
-  preview_words_after: 3
-  # Set the search token separator
-  # Default: /[\s\-/]+/
-  # Example: enable support for hyphenated search words
-  tokenizer_separator: /[\s/]+/
-  # Display the relative url in search results
-  # Supports true (default) or false
-  rel_url: true
-  # Enable or disable the search button that appears in the bottom right corner of every page
-  # Supports true or false (default)
-  button: false
-
-url: https://kojunseo.github.io
-
 aux_links:
   "Youtube 강의":
     - "https://www.youtube.com/channel/UCCaunu3Cv09ZCDxU13Gx3Hg"
@@ -75,23 +16,3 @@ nav_external_links:
 enable_copy_code_button: true
 
 footer_content: "Copyright &copy; 2023 Junseo Ko. 본 강의자료와 영상은 Mojo도큐먼트를 직접분석하여 작성하였습니다. 무단 복제와 본 내용을 퍼가서 새로운 컨텐츠로 제작하는 것을 엄격히 금지합니다.문의:<a href="mailto:piglets.frizzle0v@icloud.com"> </a>"
-
-# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: light
-
-callouts_level: quiet # or loud
-callouts:
-  highlight:
-    color: yellow
-  important:
-    title: Important
-    color: blue
-  new:
-    title: New
-    color: green
-  note:
-    title: Note
-    color: purple
-  warning:
-    title: Warning
-    color: red
